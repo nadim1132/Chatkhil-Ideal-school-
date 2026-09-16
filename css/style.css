@@ -1,0 +1,50 @@
+:root{
+    --primary:#004AAD;
+    --secondary:#007BFF;
+    --light:#F4F8FF;
+    --white:#ffffff;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:var(--light);
+}
+
+.navbar{
+    background:var(--primary);
+}
+
+.navbar-brand,
+.nav-link{
+    color:white !important;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,74,173,.8),rgba(0,74,173,.8)),
+    url('../images/school.jpg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.section-title{
+    color:var(--primary);
+    margin-bottom:25px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.card{
+    border:none;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+footer{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
