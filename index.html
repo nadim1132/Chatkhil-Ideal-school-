@@ -2,385 +2,307 @@
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>চাটখিল আইডিয়াল স্কুল</title>
-logo.svg
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-
-:root{
---primary:#004AAD;
---light:#F4F8FF;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "SolaimanLipi", Arial, sans-serif;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:var(--light);
+    background:#f4f7fc;
+}
+
+.top-banner img{
+    width:100%;
+    display:block;
+}
+
+header{
+    background:#0d2d62;
+    color:white;
+    padding:15px 0;
+    position:sticky;
+    top:0;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
 .navbar{
-background:var(--primary);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.navbar a{
-color:white !important;
-font-weight:bold;
+.logo{Untitled design.jpg
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{Untitled design.jpg
+    width:60px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:gold;
 }
 
 .hero{
-background:linear-gradient(rgba(0,74,173,.85),rgba(0,74,173,.85)),
-url('images/school.jpg');
-background-size:cover;
-background-position:center;
-padding:120px 20px;
-text-align:center;
-color:white;
+    background:url('Untitled design (1)_1.jpg') center/cover no-repeat;
+    position:relative;
+    color:white;
+    text-align:center;
+    padding:140px 20px;
 }
 
-.section-title{
-color:#004AAD;
-font-weight:bold;
-margin-bottom:30px;
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.60);
+}
+
+.hero-content{
+    position:relative;
+    z-index:1;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.section{
+    padding:60px 0;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0d2d62;
 }
 
 .card{
-border:none;
-box-shadow:0 2px 12px rgba(0,0,0,0.1);
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
 }
 
-.gallery img{
-height:250px;
-object-fit:cover;
-width:100%;
-border-radius:10px;
-transition:.4s;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
-.gallery img:hover{
-transform:scale(1.05);
+.notice{
+    border-left:5px solid #f0b400;
+}
+
+.counter{
+    background:#0d2d62;
+    color:white;
+}
+
+.counter-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    text-align:center;
+}
+
+.count{
+    padding:20px;
+}
+
+.count h2{
+    font-size:42px;
 }
 
 footer{
-background:#002B75;
-color:white;
-padding:25px;
-text-align:center;
+    background:#081d42;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
+@media(max-width:768px){
+
+.counter-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.navbar{
+flex-direction:column;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.hero p{
+font-size:18px;
+}
+}
 </style>
+
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
-<div class="container">
+<div class="top-banner">
+Untitled design (1)_1.jpg
+</div>
 
-<a class="navbar-brand" href="#">
-<img src="logo.svg
-" width="50">
-চাটখিল আইডিয়াল স্কুল
-</a>
-<svg width="300" height="400" viewBox="0 0 300 400"
-     xmlns="http://www.w3.org/2000/svg">
+<header>
+<div class="container navbar">
 
-    <!-- Shield -->
-    <path d="M150 20
-             C180 60, 240 60, 260 60
-             L260 200
-             C260 260, 220 310, 150 340
-             C80 310, 40 260, 40 200
-             L40 60
-             C60 60, 120 60, 150 20Z"
-          fill="#2E3192"
-          stroke="#ffffff"
-          stroke-width="4"/>
+<div class="logo">
+Untitled design.jpg
+<h2>চাটখিল আইডিয়াল স্কুল</h2>
+</div>
 
-    <!-- Inner Shield -->
-    <path d="M150 70
-             C170 95, 210 95, 225 95
-             L225 190
-             C225 235, 195 270, 150 295
-             C105 270, 75 235, 75 190
-             L75 95
-             C90 95, 130 95, 150 70Z"
-          fill="#ffffff"/>
-
-    <!-- Quadrants -->
-    <rect x="80" y="100" width="70" height="70" fill="#F5D6C6"/>
-    <rect x="150" y="100" width="70" height="70" fill="#CDEEFF"/>
-    <rect x="80" y="170" width="70" height="70" fill="#4CBDA8"/>
-    <rect x="150" y="170" width="70" height="70" fill="#F7F2A0"/>
-
-    <!-- Side dots -->
-    <circle cx="35" cy="120" r="8" fill="orange"/>
-    <circle cx="265" cy="120" r="8" fill="orange"/>
-
-    <!-- Banner -->
-    <path d="M60 335
-             L240 335
-             L260 360
-             L240 375
-             L60 375
-             L40 360Z"
-          fill="#C62828"
-          stroke="#FBC02D"
-          stroke-width="4"/>
-
-    <!-- Text -->
-    <text x="150" y="362"
-          text-anchor="middle"
-          fill="white"
-          font-size="16"
-          font-family="SolaimanLipi, Arial">
-        চাটখিল, নোয়াখালী
-    </text>
-</svg>
-
-
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="menu">
-
-<ul class="navbar-nav ms-auto">
-
-<li class="nav-item"><a class="nav-link" href="#home">হোম</a></li>
-<li class="nav-item"><a class="nav-link" href="#about">পরিচিতি</a></li>
-<li class="nav-item"><a class="nav-link" href="#teachers">শিক্ষকবৃন্দ</a></li>
-<li class="nav-item"><a class="nav-link" href="#gallery">গ্যালারি</a></li>
-<li class="nav-item"><a class="nav-link" href="#contact">যোগাযোগ</a></li>
-
+<nav>
+<ul>
+<li>#হোম</a></li>
+<li>#আমাদের সম্পর্কে</a></li>
+<li>#নোটিশ</a></li>
+<li>#ভর্তি</a></li>
+<li>#গ্যালারি</a></li>
+<li>#যোগাযোগ</a></li>
 </ul>
-
-</div>
-
-</div>
 </nav>
 
-<section id="home" class="hero">
+</div>
+</header>
 
-<img src="images/logo.png" width="120">
-
-<h1 class="mt-3">চাটখিল আইডিয়াল স্কুল</h1>
-
-<p>
-প্লে থেকে দশম শ্রেণি পর্যন্ত আধুনিক শিক্ষা
-</p>
-
+<section class="hero">
+<div class="hero-content">
+<h1>চাটখিল আইডিয়াল স্কুল</h1>
+<p>EMIS Code: 490749</p>
+<p>সেরা থেকে শিক্ষা, আপনার সেরা অর্জন</p>
+#অনলাইন ভর্তি</a>
+</div>
 </section>
 
-<section id="about" class="container py-5">
+<section class="counter section">
+<div class="container">
+<div class="counter-grid">
 
-<h2 class="section-title text-center">
-আমাদের সম্পর্কে
-</h2>
-
-<div class="card p-4">
-
-<p>
-চাটখিল আইডিয়াল স্কুল নোয়াখালীর চাটখিলে অবস্থিত
-একটি আধুনিক ও মানসম্মত শিক্ষা প্রতিষ্ঠান।
-এখানে প্লে থেকে দশম শ্রেণি পর্যন্ত পাঠদান করা হয়।
-</p>
-
-<p>
-📍 হাসান-হোসেন টাওয়ার (সিএন্ডবি রোডের পাশে),
-চাটখিল, নোয়াখালী।
-</p>
-
-<p>
-📞 +880 1852-712226
-</p>
-
+<div class="count">
+<h2>500+</h2>
+<p>শিক্ষার্থী</p>
 </div>
 
+<div class="count">
+<h2>25+</h2>
+<p>শিক্ষক</p>
+</div>
+
+<div class="count">
+<h2>15+</h2>
+<p>ক্লাসরুম</p>
+</div>
+
+<div class="count">
+<h2>100%</h2>
+<p>সফলতা</p>
+</div>
+
+</div>
+</div>
 </section>
 
-<section class="container py-5">
+<section class="section">
+<div class="container">
+<h2 class="title">আমাদের সম্পর্কে</h2>
 
-<h2 class="section-title text-center">
-প্রধান শিক্ষকের বার্তা
-</h2>
-
-<div class="card p-4">
-
-<h4>মোহাম্মদ আইউব আলী (বি.এস.সি, বি.এড)</h4>
-
-<p>
-প্রধান শিক্ষক
-</p>
-
-<p>
-শিক্ষার্থীদের নৈতিক ও আধুনিক শিক্ষায়
-গড়ে তোলা আমাদের লক্ষ্য।
-</p>
-
+<div class="card">
+চাটখিল আইডিয়াল স্কুল একটি আধুনিক ও আদর্শ শিক্ষাপ্রতিষ্ঠান। শিক্ষার্থীদের নৈতিক, ধর্মীয়, বিজ্ঞানভিত্তিক ও প্রযুক্তিগত শিক্ষার মাধ্যমে যোগ্য নাগরিক হিসেবে গড়ে তোলাই আমাদের লক্ষ্য।
 </div>
-
+</div>
 </section>
 
-<section id="teachers" class="container py-5">
+<section class="section">
+<div class="container">
 
-<h2 class="section-title text-center">
-শিক্ষক ও স্টাফ
-</h2>
+<h2 class="title">সাম্প্রতিক নোটিশ</h2>
 
-<div class="row g-3">
+<div class="grid">
 
-<div class="col-md-4"><div class="card p-3">মোহাম্মদ আইউব আলী<br>প্রধান শিক্ষক</div></div>
-<div class="col-md-4"><div class="card p-3">গাজী মোঃ সালাউদ্দীন<br>সহকারী শিক্ষক</div></div>
-<div class="col-md-4"><div class="card p-3">ইলিয়াস কাঞ্চন<br>সহকারী শিক্ষক</div></div>
-<div class="col-md-4"><div class="card p-3">হাসান তারেক<br>সহকারী শিক্ষক</div></div>
-<div class="col-md-4"><div class="card p-3">জাফর ইকবাল<br>সহকারী শিক্ষক</div></div>
-<div class="col-md-4"><div class="card p-3">আব্দুর রহমান<br>সহকারী মৌলভী</div></div>
-<div class="col-md-4"><div class="card p-3">শাহ আলম<br>সহকারী শিক্ষক</div></div>
-<div class="col-md-4"><div class="card p-3">সুমাইয়া খানম মীম<br>সহকারী শিক্ষিকা</div></div>
-<div class="col-md-4"><div class="card p-3">কামরুজ্জামান কণক<br>সহকারী শিক্ষিকা</div></div>
-<div class="col-md-4"><div class="card p-3">জান্নাতুল নাইমা<br>সহকারী শিক্ষিকা</div></div>
-<div class="col-md-4"><div class="card p-3">উম্মে সালমা<br>খণ্ডকালীন শিক্ষিকা</div></div>
-<div class="col-md-4"><div class="card p-3">শহিদ উল্ল্যা<br>অফিস সহকারী কাম কম্পিউটার অপারেটর</div></div>
-
+<div class="card notice">
+<h3>ভর্তি বিজ্ঞপ্তি ২০২৬</h3>
+<p>নতুন শিক্ষাবর্ষে ভর্তি কার্যক্রম চলছে।</p>
 </div>
 
+<div class="card notice">
+<h3>বার্ষিক পরীক্ষা</h3>
+<p>পরীক্ষার রুটিন শীঘ্রই প্রকাশ করা হবে।</p>
+</div>
+
+<div class="card notice">
+<h3>অভিভাবক সভা</h3>
+<p>আগামী মাসে অভিভাবক সমাবেশ অনুষ্ঠিত হবে।</p>
+</div>
+
+</div>
+</div>
 </section>
 
-<section class="container py-5">
+<section class="section">
+<div class="container">
+<h2 class="title">যোগাযোগ</h2>
 
-<h2 class="section-title text-center">
-পরিচালনা পর্ষদ
-</h2>
-
-<div class="row g-3">
-
-<div class="col-md-4"><div class="card p-3">জাকির হোসেন<br>চেয়ারম্যান</div></div>
-
-<div class="col-md-4"><div class="card p-3">নূর হোসেন রিয়াজ<br>সভাপতি</div></div>
-
-<div class="col-md-4"><div class="card p-3">আরিফ হোসেন<br>সেক্রেটারি</div></div>
-
-<div class="col-md-4"><div class="card p-3">মোহাম্মদ আইউব আলী<br>সদস্য সচিব</div></div>
-
-<div class="col-md-4"><div class="card p-3">রবিউল হোসাইন<br>পরিচালক</div></div>
-
+<div class="card">
+<p><strong>ঠিকানা:</strong> চাটখিল, নোয়াখালী</p>
+<p><strong>মোবাইল:</strong> 01852-712226</p>
+<p><strong>EMIS:</strong> 490749</p>
+<p><strong>ফেসবুক:</strong> Chatkhil Ideal School</p>
 </div>
 
+</div>
 </section>
 
-<section class="container py-5">
+<footer>
+© 2025 চাটখিল আইডিয়াল স্কুল | সকল স্বত্ব সংরক্ষিত
+</footer>
 
-<h2 class="section-title text-center">
-ভর্তি বিজ্ঞপ্তি
-</h2>
-
-<div class="card p-4">
-
-<p>
-প্লে থেকে দশম শ্রেণি পর্যন্ত ভর্তি চলছে।
-</p>
-
-<form>
-
-<input type="text" class="form-control mb-3" placeholder="শিক্ষার্থীর নাম">
-
-<input type="text" class="form-control mb-3" placeholder="পিতার নাম">
-
-<input type="text" class="form-control mb-3" placeholder="মোবাইল নম্বর">
-
-<select class="form-control mb-3">
-
-<option>শ্রেণি নির্বাচন করুন</option>
-<option>প্লে</option>
-<option>নার্সারি</option>
-<option>কেজি</option>
-<option>১ম শ্রেণি</option>
-<option>২য় শ্রেণি</option>
-<option>৩য় শ্রেণি</option>
-<option>৪র্থ শ্রেণি</option>
-<option>৫ম শ্রেণি</option>
-<option>৬ষ্ঠ শ্রেণি</option>
-<option>৭ম শ্রেণি</option>
-<option>৮ম শ্রেণি</option>
-<option>৯ম শ্রেণি</option>
-<option>১০ম শ্রেণি</option>
-
-</select>
-
-<button class="btn btn-primary">
-আবেদন করুন
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-<section class="container py-5">
-
-<h2 class="section-title text-center">
-নোটিশ বোর্ড
-</h2>
-
-<div class="card p-3 mb-3">
-২০২৭ শিক্ষাবর্ষে ভর্তি কার্যক্রম চলমান।
-</div>
-
-<div class="card p-3">
-আগামী মাসিক পরীক্ষা নির্ধারিত সময় অনুযায়ী অনুষ্ঠিত হবে।
-</div>
-
-</section>
-
-<section id="gallery" class="container py-5">
-
-<h2 class="section-title text-center">
-ফটো গ্যালারি
-</h2>
-
-<div class="row gallery g-3">
-
-<div class="col-md-4">
-<img src="images/gallery1.jpg">
-</div>
-
-<div class="col-md-4">
-<img src="images/gallery2.jpg">
-</div>
-
-<div class="col-md-4">
-<img src="images/gallery3.jpg">
-</div>
-
-<div class="col-md-4">
-<img src="images/gallery4.jpg">
-</div>
-
-<div class="col-md-4">
-<img src="images/gallery5.jpg">
-</div>
-
-<div class="col-md-4">
-<img src="images/gallery6.jpg">
-</div>
-
-</div>
-
-</section>
-
-<section id="contact" class="container py-5">
-
-<h2 class="section-title text-center">
-যোগাযোগ
-</h2>
-
-<div class="card p-4">
-
-<p>
-📍 হাসান-হোসেন টাওয়ার (সিএন্ডবি রোডের পাশে),
-চাটখিল, নোয়াখালী
-</p>
-
-<p>
+</body>
+</html>
