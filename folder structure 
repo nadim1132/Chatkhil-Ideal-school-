@@ -1,0 +1,20 @@
+chatkhil-ideal-school/
+│
+├── index.html
+├── about.html
+├── teachers.html
+├── admission.html
+├── gallery.html
+├── notice.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── images/
+│   ├── logo.png
+│   ├── school.jpg
+│   └── gallery/
+│
+└── js/
+    └── script.js
